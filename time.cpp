@@ -47,7 +47,7 @@ Time Time::sub(Time obj){
         return objp;
     }
 int main(){
-        Time obj1,obj2,obj3,obj4;
+        Time obj1,obj2,obj3,obj3;
         cout<<"Enter the first time";
         obj1.read();
         cout<<"Enter the second time";
@@ -55,8 +55,8 @@ int main(){
         obj3=obj1.add(obj2);
         cout<<"Addition--> \n";
         obj3.display();
-        obj4=obj1.sub(obj2);
+        obj3=obj1.sub(obj2);
         cout<<"Substraction-->";
-        obj4.display();
+        obj3.display();
     }
 
