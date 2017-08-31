@@ -8,7 +8,7 @@ int maxSize;
 
 class Stack
 {
-    char s[100];
+    int s[100];
     int top;
 
 public:
@@ -87,9 +87,9 @@ int evalPostfix(char postfix[], int size) {
    return val;
 }
 int main() {
-   char postfix[]={'3','6','*','9','8','9','2','/','3','*','+','*','+'};
-   /*cout<<"Enter a postfix expression:";
-   gets(postfix);*/
+   char postfix[100];
+   cout<<"Enter a postfix expression:";
+   gets(postfix);
    int size = strlen(postfix);
    maxSize=size;
    int val = evalPostfix(postfix, size);

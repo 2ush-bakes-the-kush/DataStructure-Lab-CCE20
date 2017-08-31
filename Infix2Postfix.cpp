@@ -103,12 +103,12 @@ void infixToPostfix(string s)
         st.pop();
         postfix += c;
     }
-    cout <<"\nPostfix"<< postfix << endl;
+    cout <<"\nPostfix : "<< postfix << endl;
 }
 int main()
 {
     char infix[100];
-    cout<<"Enter an expression: ";
+    cout<<"Enter an expression : ";
     gets(infix);
     maxSize=strlen(infix);
     infixToPostfix(infix);
